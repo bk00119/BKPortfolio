@@ -1,0 +1,14 @@
+body {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Routes {
+  display: flex;
+  justify-content: center;
+}

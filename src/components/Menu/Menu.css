@@ -1,0 +1,86 @@
+.Menu {
+  /* position: absolute;
+  bottom: 2em;
+  right: 2em; */
+}
+.Menu_Content {
+  background-color: #fff;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  color: black;
+
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  /* padding-left: 1em; */
+}
+.Menu_Contents {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 2em; */
+  height: 60%;
+  max-height: 30em;
+  justify-content: space-between;
+}
+.Menu_Dir {
+  padding-left: 1em;
+  font-size: 2em;
+  /* background-color: red; */
+  cursor: pointer;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.Menu_Dir:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+  transition: 0.7s;
+  color: #f2aa4c;
+}
+
+.Menu_CloseBtn {
+  position: absolute;
+  /* position: fixed; */
+  cursor: pointer;
+  z-index: 1;
+  bottom: 5em;
+  /* right: 12em; */
+  left: 2em;
+  color: #1d1d1d;
+}
+.Menu_CloseBtn:hover {
+  color: #f2aa4c;
+}
+
+.MenuBtn {
+  color: #f2aa4c;
+  cursor: pointer;
+  /* position: absolute; */
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  /* transition: 3s; */
+  /* z-index: 2; */
+
+  /* transform-origin: bottom; */
+}
+/* .MenuBtn:hover {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.MenuBtn_Bounce {
+  animation-name: MenuBtn_Bounce;
+  animation-timing-function: ease;
+}
+@keyframes MenuBtn_Bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+} */

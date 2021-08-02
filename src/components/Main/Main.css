@@ -1,0 +1,45 @@
+.Main {
+  width: 90vw;
+}
+
+.Intro_Highlight {
+  color: #f2aa4c;
+}
+.Highlight {
+  color: #fff;
+}
+#highlight_1 {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#highlight_2 {
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#highlight_3 {
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.Highlight_Animation {
+  animation-name: Highlight_Animation;
+  animation-timing-function: ease;
+}
+@keyframes Highlight_Animation {
+  30% {
+    color: #f2aa4c;
+  }
+}
+
+.Page_Title {
+  color: #f2aa4c;
+}
+
+.Main_Brief_Intro,
+.Main .Skills,
+.Main .Timeline,
+.Main .Projects,
+.Main .Contact {
+  margin-bottom: 4em;
+}
