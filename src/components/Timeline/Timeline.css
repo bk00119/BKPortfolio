@@ -1,0 +1,21 @@
+/* .Timeline_Content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  position: relative;
+  align-items: center;
+}
+
+.Timeline_Item {
+  background-color: red;
+  position: relative;
+}
+
+.Timeline_Bar {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: white;
+  right: -9px
+} */
