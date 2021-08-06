@@ -19,3 +19,102 @@
   background: white;
   right: -9px
 } */
+
+/* .Timeline_Page {
+  padding: 2rem;
+  padding-bottom: 400px;
+  margin: 0 auto;
+  max-width: 800px;
+} */
+
+.Timeline {
+  position: relative;
+  min-height: 150px;
+}
+
+.Timeline_Line {
+  position: absolute;
+  /* z-index: 2; */
+  left: calc(50% - 1px);
+  width: 2px;
+  top: -50px;
+  bottom: -50px;
+  background-color: #fff;
+  /* display: none; */
+}
+
+.Timeline_Line:before,
+.Timeline_Line:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #f2aa4c;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Timeline_Line:after {
+  bottom: 0;
+}
+
+.Timeline_Section {
+  display: flex;
+  /* opacity: 0; */
+  /* transform: translateX(-100%); */
+  transition: 600ms ease;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-height: 15vh;
+  align-items: center;
+}
+
+.Timeline_Section:nth-child(odd) {
+  flex-direction: row-reverse;
+  /* transform: translateX(100%); */
+}
+.Timeline_Section:nth-child(even) {
+  text-align: right;
+  /* align-items: right; */
+}
+
+.Timeline_Section:nth-child(odd) .Timeline_Year,
+.Timeline_Section:nth-child(odd) .Timeline_Event {
+  margin-left: 10%;
+}
+.Timeline_Section:nth-child(even) .Timeline_Year,
+.Timeline_Section:nth-child(even) .Timeline_Event {
+  margin-right: 10%;
+}
+
+.Timeline_Bead {
+  position: absolute;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #f2aa4c;
+  left: 50%;
+  /* top: 20%; */
+  transform: translateX(-50%);
+}
+
+.Timeline_Content {
+  /* width: calc(50% - 2rem); */
+  width: 50%;
+}
+
+.show_me:nth-child(n) {
+  transform: none;
+  opacity: 1;
+}
+
+.Timeline_Year {
+  font-size: 1.3em;
+  color: #f2aa4c;
+}

@@ -22,9 +22,9 @@ const Menu = () => {
     document.getElementById("MenuBtn").style.display = "block";
   };
 
-  const showMenu = () => {
-    setShow(!show);
-    if (show) {
+  const showMenu = async () => {
+    // show not rendering right away as show changes...so going opposite
+    if (!show) {
       document.getElementById("MenuBtn").style.display = "none";
       document.getElementById("Menu_Content").style.width = "15em";
       document.getElementById("Menu_CloseBtn").style.visibility = "visible";
@@ -34,6 +34,7 @@ const Menu = () => {
       document.getElementById("MenuBtn").style.display = "block";
       document.getElementById("Menu_CloseBtn").style.visibility = "hidden";
     }
+    await setShow(!show);
   };
 
   return (
