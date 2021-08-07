@@ -44,7 +44,9 @@ const Skills = () => {
         </div>
 
         {/* <Sphere /> */}
-        <SkillSphere />
+        <div class="SkillSphere">
+          <SkillSphere />
+        </div>
       </div>
     </div>
   );

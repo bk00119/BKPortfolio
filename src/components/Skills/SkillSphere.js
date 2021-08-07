@@ -61,10 +61,10 @@ const SkillSphere = () => {
       padding = 50,
       fontSize = 22,
       tilt = 0,
-      initialVelocityX = 0,
-      initialVelocityY = 0,
-      initialRotationX = 0,
-      initialRotationZ = 0
+      initialVelocityX = 20,
+      initialVelocityY = 20,
+      initialRotationX = 20,
+      initialRotationZ = 10
     } = options;
 
     let vx = initialVelocityX,
@@ -83,8 +83,10 @@ const SkillSphere = () => {
 
     canvas.style.width = `70%`;
     canvas.style.height = `70%`;
-    // canvas.style.minWidth = `${width/2}px`;
-    // canvas.style.minHeight = `${height/2}px`;
+    canvas.style.maxWidth = `${width}px`;
+    canvas.style.maxHeight = `${height}px`;
+    // canvas.style.width = `${width/2}px`;
+    // canvas.style.height = `${height/2}px`;
     ctx.scale(2, 2);
 
     // scrolling

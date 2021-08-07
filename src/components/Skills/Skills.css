@@ -1,6 +1,12 @@
 #SkillSphere {
   color: white;
 }
+.SkillSphere {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 90%;
+}
 
 .Skill_Description_P {
   /* margin-bottom: 2em; */
