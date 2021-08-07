@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <!-- <script src="jquery.svg3dtagcloud.min.js"></script> -->
+    <style>
+      .SphereBody {
+        background-color: #1d1d1d;
+      }
+      #Sphere {
+        position: absolute;
+        left: 25%;
+        top: 15%;
+      }
+    </style>
+  </head>
+  <body class="SphereBody">
+    <div id="Sphere"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // $(document).ready(function () {
+      var entries = [
+        { label: "HTML" },
+        { label: "CSS" },
+        { label: "JavaScript" },
+        { label: "React JS" },
+        { label: "Node JS" },
+        { label: "Express" },
+        { label: "Mongoose" },
+        { label: "PHP" },
+        { label: "Python" },
+        { label: "C++" },
+        { label: "AWS" },
+        { label: "MySQL" },
+        { label: "Mongo DB" }
+      ];
+
+      var settings = {
+        entries: entries,
+        width: 640,
+        height: 480,
+        radius: "65%",
+        radiusMin: 75,
+        bgDraw: true,
+        bgColor: "#1d1d1d",
+        opacityOver: 1.0,
+        opacityOut: 0.05,
+        opacitySpeed: 6,
+        fov: 800,
+        speed: 2,
+        fontFamily: "Courier, Aria, sans-serif",
+        fontSize: "30",
+        fontColor: "#f2aa4c",
+        fontWeight: "bold",
+        fontStyle: "normal",
+        fontStretch: "normal",
+        fontToUpperCase: false
+      };
+      // $("#tag").svg3DTagCloud(settings);
+      $("#Sphere").svg3DTagCloud(settings);
+      // });
+    </script>
+  </body>
+</html>
