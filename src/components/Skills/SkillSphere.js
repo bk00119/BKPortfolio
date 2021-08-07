@@ -101,15 +101,15 @@ const SkillSphere = () => {
     canvas.addEventListener("mousemove", (event) => {
       if (!clicked) return;
       var [dx, dy] = [event.screenX - lastX, event.screenY - lastY];
-      var [lastX, lastY] = [event.screenX, event.screenY];
+      [lastX, lastY] = [event.screenX, event.screenY];
 
       // rotation update
       rz += -dy * 0.01;
       rx += dx * 0.01;
 
       // velocity update
-      var vx = dx * 0.1;
-      var vy = dy * 0.1;
+      vx = dx * 0.1;
+      vy = dy * 0.1;
 
       if (!looping) startLoop();
     });
