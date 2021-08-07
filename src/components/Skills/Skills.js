@@ -28,6 +28,11 @@ const Skills = () => {
     <div className="Skills">
       <h2 class="Page_Title">My Skills</h2>
       {/* <SkillSphere /> */}
+      {/* <Sphere /> */}
+      <div class="SkillSphere">
+        <SkillSphere />
+      </div>
+
       <div class="Skill_Description">
         <div class="Skill_Description_P">
           I started my journey as a Full-Stack Developer in 2016, creating web
@@ -41,11 +46,6 @@ const Skills = () => {
         <div class="Skill_Description_P">
           While I was in Republic of Korea Army, I spent my free time creating a
           web platform, HostFam.
-        </div>
-
-        {/* <Sphere /> */}
-        <div class="SkillSphere">
-          <SkillSphere />
         </div>
       </div>
     </div>
