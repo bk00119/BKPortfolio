@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import SkillSphere from "./SkillSphere";
-import Sphere from "./Sphere";
+// import Sphere from "./Sphere";
 import "./Skills.css";
 
 const Skills = () => {
