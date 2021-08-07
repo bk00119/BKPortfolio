@@ -73,7 +73,7 @@ const SkillSphere = () => {
       rz = initialRotationZ;
 
     // canvas setup
-    ctx = canvas.getContext("2d");
+    var ctx = canvas.getContext("2d");
     ctx.textAlign = "center";
     // ctx.alignItems = "center";
 
