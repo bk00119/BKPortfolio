@@ -81,8 +81,10 @@ const SkillSphere = () => {
     canvas.width = width * 2;
     canvas.height = height * 2;
 
-    canvas.style.width = `70%`;
-    canvas.style.height = `70%`;
+    // canvas.style.width = `70%`;
+    // canvas.style.height = `70%`;
+    canvas.style.width = `90%`;
+    canvas.style.height = `90%`;
     canvas.style.maxWidth = `${width}px`;
     canvas.style.maxHeight = `${height}px`;
     // canvas.style.width = `${width/2}px`;
