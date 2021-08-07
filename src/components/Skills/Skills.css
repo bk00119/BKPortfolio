@@ -1,5 +1,6 @@
-#SkillSphere {
-  color: white;
+.Skills_Detail {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .SkillSphere {
   display: flex;
@@ -8,10 +9,26 @@
   width: 90%;
 }
 
-.Skill_Description_P {
-  /* margin-bottom: 2em; */
+#SkillSphere {
+  color: white;
 }
 
-.Sphere {
-  position: relative;
+.Skill_Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 400px) {
+  .Skills_Detail {
+    flex-direction: column;
+  }
+}
+@media (min-width: 399px) {
+  #SkillSphere {
+    width: 50vw !important;
+    height: 50vw !important;
+    max-width: 400px !important;
+    max-height: 400px !important;
+  }
 }
