@@ -61,10 +61,10 @@ const SkillSphere = () => {
       padding = 50,
       fontSize = 22,
       tilt = 0,
-      initialVelocityX = 20,
-      initialVelocityY = 20,
-      initialRotationX = 20,
-      initialRotationZ = 10
+      initialVelocityX = 500,
+      initialVelocityY = 500,
+      initialRotationX = -500,
+      initialRotationZ = -500
     } = options;
 
     let vx = initialVelocityX,

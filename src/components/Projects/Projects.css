@@ -1,0 +1,61 @@
+.Project {
+  background-color: #fff;
+  width: 40vw;
+  max-width: 30em;
+  height: 30vw;
+  max-height: 22.5em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1em;
+  background-color: #ff837f;
+  cursor: pointer;
+}
+
+.Project:hover .Project_Default_Background,
+.Project:hover .Project_Img {
+  display: none;
+}
+
+.Project:hover .Project_Description {
+  display: flex;
+}
+.Project_Title,
+.Project_Description {
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.Project_Default_Background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url(/Project_Image/HostFam_Img_Desktop.png);
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+}
+.Project_Title {
+  font-size: 2em;
+  color: #fff;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(255, 131, 127, 0.8);
+  width: 100%;
+  display: flex;
+}
+.Project_Description {
+  display: none;
+  font-size: 1em;
+  width: 80%;
+}
+
+@media (max-width: 400px) {
+  .Project {
+    width: 90vw;
+    height: 60vw;
+  }
+}

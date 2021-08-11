@@ -5,6 +5,15 @@ const Projects = () => {
     <div className="Projects">
       <h2 class="Page_Title">Projects</h2>
       {/* <SkillSphere /> */}
+      <section className="Project">
+        <div className="Project_Default_Background">
+          <span className="Project_Title">HostFam</span>
+        </div>
+        <span className="Project_Description">
+          Connecting host families in the US to global visitors, targeted
+          international students
+        </span>
+      </section>
     </div>
   );
 };
