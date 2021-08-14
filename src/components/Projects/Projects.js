@@ -1,6 +1,18 @@
 import "./Projects.css";
 
 const Projects = () => {
+  var hostFamImg = new Image();
+  hostFamImg.src = "./Project_Image/HostFam_Img_Desktop.png";
+
+  var int = setInterval(function () {
+    if (hostFamImg.complete) {
+      clearInterval(int);
+      document.getElementById(
+        "Project_HostFam"
+      ).style.backgroundImage = `url(${hostFamImg.src})`;
+    }
+  }, 50);
+
   return (
     <div className="Projects">
       <h2 class="Page_Title">Projects</h2>
