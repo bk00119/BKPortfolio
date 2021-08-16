@@ -9,3 +9,7 @@
   background-color: #f2aa4c;
   cursor: pointer;
 }
+.ContactBtn a {
+  color: #fff;
+  text-decoration: none;
+}

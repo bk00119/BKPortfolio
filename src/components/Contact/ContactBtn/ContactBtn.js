@@ -3,7 +3,9 @@ import "./ContactBtn.css";
 const ContactBtn = () => {
   return (
     <div className="ContactBtn">
-      <span>Contact me!</span>
+      <span>
+        <a href="#Contact">Contact me!</a>
+      </span>
     </div>
   );
 };
