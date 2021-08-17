@@ -48,7 +48,9 @@ const Menu = () => {
       </div>
       <div className="Menu_Content" id="Menu_Content">
         <div className="Menu_Contents">
-          <span class="Menu_Dir">Home</span>
+          <span class="Menu_Dir">
+            <a href="#Home">Home</a>
+          </span>
           <span class="Menu_Dir">
             <a href="#Skills">Skills</a>
           </span>
