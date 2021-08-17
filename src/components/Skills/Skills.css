@@ -16,7 +16,8 @@
 .Skill_Description {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
 }
 
 @media (max-width: 400px) {
@@ -26,9 +27,9 @@
 }
 @media (min-width: 399px) {
   #SkillSphere {
-    width: 50vw !important;
-    height: 50vw !important;
-    max-width: 400px !important;
-    max-height: 400px !important;
+    width: 60vw !important;
+    height: 60vw !important;
+    max-width: 500px !important;
+    max-height: 500px !important;
   }
 }

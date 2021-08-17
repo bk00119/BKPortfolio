@@ -25,8 +25,8 @@ const Skills = () => {
   const click = () => {};
 
   return (
-    <div className="Skills">
-      <h2 class="Page_Title">My Skills</h2>
+    <div className="Skills" id="Skills">
+      {/* <h2 class="Page_Title">My Skills</h2> */}
       {/* <SkillSphere /> */}
       {/* <Sphere /> */}
       <div class="Skills_Detail">
@@ -35,6 +35,7 @@ const Skills = () => {
         </div>
 
         <div class="Skill_Description">
+          <h2 class="Page_Title">My Skills</h2>
           <div class="Skill_Description_P">
             I started my journey as a Full-Stack Developer in 2016, creating web
             apps for my High School.
@@ -45,8 +46,15 @@ const Skills = () => {
           </div>
           <br />
           <div class="Skill_Description_P">
-            While I was in Republic of Korea Army, I spent my free time creating
-            a web platform, HostFam.
+            {/* While I was in Republic of Korea Army, I spent my free time creating
+            a web platform, HostFam. */}
+            I have managed and participated in several projects since I was in
+            High School. Most recently, I released a beta version of a web
+            platform, HostFam, which connects host families in the United States
+            and foreigners looking for a host family and a home, mostly
+            international students. Working on a project independently, I
+            sharpened my skills in full-stack programming and managing a project
+            on time and on budget.
           </div>
         </div>
       </div>

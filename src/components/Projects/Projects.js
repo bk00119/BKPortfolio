@@ -25,12 +25,20 @@ const Projects = () => {
     }
   }, 50);
 
+  const redirect = (project) => {
+    // project == "HostFam" ? window.open("https://www.hostfam.net") : null;
+  };
+
   return (
-    <div className="Projects">
+    <div className="Projects" id="Projects">
       <h2 class="Page_Title">Projects</h2>
       {/* <SkillSphere /> */}
       <div className="Project_Gallery">
-        <section className="Project" id="HostFam">
+        <section
+          className="Project"
+          id="HostFam"
+          onClick={() => window.open("https://www.hostfam.net")}
+        >
           <div className="Project_Default_Background" id="Project_HostFam">
             <span className="Project_Title">HostFam</span>
           </div>
@@ -39,7 +47,11 @@ const Projects = () => {
             international students
           </span>
         </section>
-        <section className="Project" id="SHSI">
+        <section
+          className="Project"
+          id="SHSI"
+          onClick={() => window.open("https://youtu.be/mIsHGrhOs1Q")}
+        >
           <div className="Project_Default_Background" id="Project_SHSI">
             <span className="Project_Title">Study Hall Signin</span>
           </div>

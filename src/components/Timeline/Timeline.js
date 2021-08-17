@@ -4,7 +4,7 @@ const Timeline = () => {
   console.log();
 
   return (
-    <div className="Timeline_Page">
+    <div className="Timeline_Page" id="Timeline">
       <h2 class="Page_Title">Timeline</h2>
       {/* <SkillSphere /> */}
 

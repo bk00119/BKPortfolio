@@ -9,7 +9,7 @@ import "./Main.css";
 
 const Main = () => {
   return (
-    <div class="Main">
+    <div class="Main" id="Home">
       <Menu />
       <h1>
         Hi, <br />

@@ -49,10 +49,18 @@ const Menu = () => {
       <div className="Menu_Content" id="Menu_Content">
         <div className="Menu_Contents">
           <span class="Menu_Dir">Home</span>
-          <span class="Menu_Dir">Skills</span>
-          <span class="Menu_Dir">Timeline</span>
-          <span class="Menu_Dir">Projects</span>
-          <span class="Menu_Dir">Contact</span>
+          <span class="Menu_Dir">
+            <a href="#Skills">Skills</a>
+          </span>
+          <span class="Menu_Dir">
+            <a href="#Timeline">Timeline</a>
+          </span>
+          <span class="Menu_Dir">
+            <a href="#Projects">Projects</a>
+          </span>
+          <span class="Menu_Dir">
+            <a href="#Contact">Contact</a>
+          </span>
         </div>
         <div
           class="Menu_CloseBtn"
