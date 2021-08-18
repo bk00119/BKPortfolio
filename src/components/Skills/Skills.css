@@ -1,3 +1,10 @@
+#Page_Mobile_Title {
+  display: inline-block;
+}
+#Page_Desktop_Title {
+  display: none;
+}
+
 .Skills_Detail {
   display: flex;
   flex-direction: row-reverse;
@@ -31,5 +38,11 @@
     height: 60vw !important;
     max-width: 500px !important;
     max-height: 500px !important;
+  }
+  #Page_Mobile_Title {
+    display: none;
+  }
+  #Page_Desktop_Title {
+    display: inline-block;
   }
 }

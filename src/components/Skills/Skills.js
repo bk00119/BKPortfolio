@@ -26,7 +26,9 @@ const Skills = () => {
 
   return (
     <div className="Skills" id="Skills">
-      {/* <h2 class="Page_Title">My Skills</h2> */}
+      <h2 class="Page_Title" id="Page_Mobile_Title">
+        My Skills
+      </h2>
       {/* <SkillSphere /> */}
       {/* <Sphere /> */}
       <div class="Skills_Detail">
@@ -35,7 +37,9 @@ const Skills = () => {
         </div>
 
         <div class="Skill_Description">
-          <h2 class="Page_Title">My Skills</h2>
+          <h2 class="Page_Title" id="Page_Desktop_Title">
+            My Skills
+          </h2>
           <div class="Skill_Description_P">
             I started my journey as a Full-Stack Developer in 2016, creating web
             apps for my High School.
