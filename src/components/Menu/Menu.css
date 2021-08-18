@@ -70,7 +70,7 @@
   bottom: 1em;
   right: 2em;
   /* transition: 3s; */
-  /* z-index: 2; */
+  z-index: 2;
 
   /* transform-origin: bottom; */
 }

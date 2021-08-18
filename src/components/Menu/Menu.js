@@ -9,39 +9,28 @@ const Menu = () => {
   console.log(show);
 
   const openMenu = () => {
-    setShow(true);
-    // console.log(document.getElementById("Menu").style.width);
-    // document.getElementById("MenuBtn").style.display = "none";
-    // document.getElementById("Menu").style.width = "15em";
-
     document.getElementById("MenuBtn").style.display = "none";
     document.getElementById("Menu_Content").style.width = "15em";
     document.getElementById("Menu_CloseBtn").style.visibility = "visible";
+    setShow(true);
   };
 
   const closeMenu = () => {
-    setShow(false);
-    // console.log(document.getElementById("Menu").style.width);
-    // document.getElementById("Menu").style.width = "0px";
-    // document.getElementById("MenuBtn").style.display = "block";
-
     document.getElementById("Menu_Content").style.width = "0px";
     document.getElementById("MenuBtn").style.display = "block";
     document.getElementById("Menu_CloseBtn").style.visibility = "hidden";
+    setShow(false);
   };
 
   const showMenu = async () => {
     // show not rendering right away as show changes...so going opposite
-    if (!show) {
-      document.getElementById("MenuBtn").style.display = "none";
-      document.getElementById("Menu_Content").style.width = "15em";
-      document.getElementById("Menu_CloseBtn").style.visibility = "visible";
-      // document.getElementById("MenuBtn").style.left = "1em";
-    } else {
-      document.getElementById("Menu_Content").style.width = "0px";
-      document.getElementById("MenuBtn").style.display = "block";
-      document.getElementById("Menu_CloseBtn").style.visibility = "hidden";
-    }
+    // if (!show) {
+    //   // document.getElementById("MenuBtn").style.left = "1em";
+    //   openMenu();
+    // } else {
+    //   closeMenu();
+    // }
+    show ? closeMenu() : openMenu();
     await setShow(!show);
   };
 
@@ -50,7 +39,7 @@ const Menu = () => {
       <div
         class="MenuBtn MenuBtn_Bounce"
         id="MenuBtn"
-        onClick={() => showMenu()}
+        onClick={() => openMenu()}
       >
         <FontAwesomeIcon icon={faBars} size="2x" />
       </div>
@@ -85,7 +74,7 @@ const Menu = () => {
         <div
           class="Menu_CloseBtn"
           id="Menu_CloseBtn"
-          onClick={() => showMenu()}
+          onClick={() => closeMenu()}
         >
           <FontAwesomeIcon icon={faChevronRight} size="2x" />
         </div>
