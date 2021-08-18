@@ -11,15 +11,23 @@ const Menu = () => {
   const openMenu = () => {
     setShow(true);
     // console.log(document.getElementById("Menu").style.width);
+    // document.getElementById("MenuBtn").style.display = "none";
+    // document.getElementById("Menu").style.width = "15em";
+
     document.getElementById("MenuBtn").style.display = "none";
-    document.getElementById("Menu").style.width = "15em";
+    document.getElementById("Menu_Content").style.width = "15em";
+    document.getElementById("Menu_CloseBtn").style.visibility = "visible";
   };
 
   const closeMenu = () => {
     setShow(false);
     // console.log(document.getElementById("Menu").style.width);
-    document.getElementById("Menu").style.width = "0px";
+    // document.getElementById("Menu").style.width = "0px";
+    // document.getElementById("MenuBtn").style.display = "block";
+
+    document.getElementById("Menu_Content").style.width = "0px";
     document.getElementById("MenuBtn").style.display = "block";
+    document.getElementById("Menu_CloseBtn").style.visibility = "hidden";
   };
 
   const showMenu = async () => {
@@ -49,19 +57,29 @@ const Menu = () => {
       <div className="Menu_Content" id="Menu_Content">
         <div className="Menu_Contents">
           <span class="Menu_Dir">
-            <a href="#Home">Home</a>
+            <a href="#Home" onClick={() => closeMenu()}>
+              Home
+            </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Skills">Skills</a>
+            <a href="#Skills" onClick={() => closeMenu()}>
+              Skills
+            </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Timeline">Timeline</a>
+            <a href="#Timeline" onClick={() => closeMenu()}>
+              Timeline
+            </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Projects">Projects</a>
+            <a href="#Projects" onClick={() => closeMenu()}>
+              Projects
+            </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Contact">Contact</a>
+            <a href="#Contact" onClick={() => closeMenu()}>
+              Contact
+            </a>
           </span>
         </div>
         <div
