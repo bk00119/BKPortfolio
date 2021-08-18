@@ -6,7 +6,7 @@ import "./Menu.css";
 
 const Menu = () => {
   const [show, setShow] = useState(false);
-  console.log(show);
+  // console.log(show);
 
   const openMenu = () => {
     document.getElementById("MenuBtn").style.display = "none";
@@ -24,12 +24,6 @@ const Menu = () => {
 
   const showMenu = async () => {
     // show not rendering right away as show changes...so going opposite
-    // if (!show) {
-    //   // document.getElementById("MenuBtn").style.left = "1em";
-    //   openMenu();
-    // } else {
-    //   closeMenu();
-    // }
     show ? closeMenu() : openMenu();
     await setShow(!show);
   };
@@ -46,27 +40,27 @@ const Menu = () => {
       <div className="Menu_Content" id="Menu_Content">
         <div className="Menu_Contents">
           <span class="Menu_Dir">
-            <a href="#Home" onClick={() => closeMenu()}>
+            <a href="#Home" onClick={() => showMenu()}>
               Home
             </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Skills" onClick={() => closeMenu()}>
+            <a href="#Skills" onClick={() => showMenu()}>
               Skills
             </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Timeline" onClick={() => closeMenu()}>
+            <a href="#Timeline" onClick={() => showMenu()}>
               Timeline
             </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Projects" onClick={() => closeMenu()}>
+            <a href="#Projects" onClick={() => showMenu()}>
               Projects
             </a>
           </span>
           <span class="Menu_Dir">
-            <a href="#Contact" onClick={() => closeMenu()}>
+            <a href="#Contact" onClick={() => showMenu()}>
               Contact
             </a>
           </span>
@@ -74,7 +68,7 @@ const Menu = () => {
         <div
           class="Menu_CloseBtn"
           id="Menu_CloseBtn"
-          onClick={() => closeMenu()}
+          onClick={() => showMenu()}
         >
           <FontAwesomeIcon icon={faChevronRight} size="2x" />
         </div>
